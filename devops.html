@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DevOps Branch</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0f172a;
+        font-family: Arial, sans-serif;
+    }
+
+    .devops-text {
+        font-size: 60px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #00f5ff, #7c3aed, #00f5ff);
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 4s linear infinite,
+                   floatText 3s ease-in-out infinite;
+        text-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+    }
+
+    /* Gradient Animation */
+    @keyframes gradientMove {
+        0% { background-position: 0%; }
+        100% { background-position: 200%; }
+    }
+
+    /* Floating Animation */
+    @keyframes floatText {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="devops-text">DEVOPS BRANCH</div>
+
+</body>
+</html>
